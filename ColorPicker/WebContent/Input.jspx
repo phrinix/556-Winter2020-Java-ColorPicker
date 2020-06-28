@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page language="java"
+        contentType="application/xhtml+xml; charset=UTF-8" pageEncoding="UTF-8" />
+    <jsp:output omit-xml-declaration="no" 
+        doctype-root-element="html" 
+        doctype-public="-//W3C//DTD XHTML 1.1//EN" 
+        doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" href="Input.css" type="text/css" />
+<title>Color Picker</title>
+</head>
+<body>
+<form action="Output.jspx" method="post">
+<p>RED: <input  name="RED" type="text" /><br />
+GREEN: <input  name="GREEN" type="text" /><br />
+BLUE: <input name="BLUE" type="text" /><br />
+<input name="Pick" type="submit" value="Pick" /></p>
+</form>
+<hr />
+<h2>Special Colors</h2>
+<p><a class="gold" href="Output.jspx?RED=204&amp;amp;GREEN=167&amp;amp;BLUE=55">GOLD</a><br />
+<a class="pink" href="Output.jspx?RED=255&amp;amp;GREEN=128&amp;amp;BLUE=192">PINK</a><br />
+<a class="brown" href="Output.jspx?RED=128&amp;amp;GREEN=64&amp;amp;BLUE=0">BROWN</a></p>
+</body>
+</html>
+</jsp:root>
